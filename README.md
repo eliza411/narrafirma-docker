@@ -18,3 +18,4 @@ the https port with a self-signed cert.
     docker run -p 8080:8080 -p 8081:8081 \
     -e NF_SUPERUSER=changethis -e NF_PASSWORD=changethis eliza411/narrafirma
 
+Review the Dockerfile itself for more detail.
