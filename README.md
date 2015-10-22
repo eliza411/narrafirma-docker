@@ -1,10 +1,6 @@
-# Narrafirma Docker File
+# NarraFirma Docker File
 
-A Dockerfile to run [Narrafirma](http://narrafirma.com) as a stand-alone
-Node.js app. It can also be run as a Wordpress plugin. See the Narrafirma 
-[install
-directions](https://narrafirma.com/home/setting-up-narrafirma-on-your-local-computer/)
-for more details.
+A Dockerfile to run [NarraFirma](http://narrafirma.com) as a stand-alone Node.js app. It can also be run as a Wordpress plugin. See the NarraFirma [install directions](https://narrafirma.com/home/setting-up-narrafirma-on-your-local-computer/) for more details.
 
 ## To build the image (don't miss the dot at the end)
     docker build -t "eliza411/narrafirma" .

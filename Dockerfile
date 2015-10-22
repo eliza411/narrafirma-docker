@@ -1,7 +1,7 @@
 FROM node
 MAINTAINER Melissa Anderson <melissa@happypunch.com>
 
-# Set the version of Narrafirma
+# Set the version of NarraFirma
 ENV NF_VERSION 0.9.2
 
 # Temporary superuser name and password. These should be overridden when
@@ -9,15 +9,7 @@ ENV NF_VERSION 0.9.2
 ENV NF_SUPERUSER superuser
 ENV NF_PASSWORD password
 
-# To build the image in this directory (don't miss the dot at the end):
-#   docker build -t "eliza411/narrafirma" .
-
-# To run the container:
-#  -p: The first port in each pair is the host port; change as needed.
-#      8081 is the https port with a self-signed cert.
-#  -e: Specify your superuser credentials.
-#  docker run -p 8080:8080 -p 8081:8081 -e NF_SUPERUSER=changethis -e NF_PASSWORD=changethis eliza411/narrafirma
-
+# Get dependencies
 RUN apt-get install curl
 RUN npm install -g typescript
 
